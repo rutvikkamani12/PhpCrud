@@ -1,3 +1,8 @@
+<?php
+session_start();
+if(isset($_SESSION['uname'])){
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to Home page</h1>
+    <h1>Welcome <?php echo $_SESSION['uname']; ?> , This is Home page</h1>
+
+    <td>
+        <button type="submit">Logout</button>
+    </td>
 </body>
 </html>
+
+<?php
+}
+?>
