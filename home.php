@@ -14,9 +14,8 @@ if(isset($_SESSION['uname'])){
 <body>
     <h1>Welcome <?php echo $_SESSION['uname']; ?> , This is Home page</h1>
 
-    <td>
-        <button type="submit">Logout</button>
-    </td>
+    <br>
+    <a href="logout.php">Logout</a>
 </body>
 </html>
 
