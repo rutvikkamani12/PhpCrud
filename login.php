@@ -20,21 +20,23 @@
     }
 </style>
 
-<body style="background-color:black;">
+<body>
     <div class="container">
         <div class="d-flex justify-content-center mt-5">
             <div class="border border-black login">
                 <form action="auth.php" method="post">
                     <h2 class="text-center">Login</h2>
                     <?php
-                        if (isset($_GET['error'])){
-                            ?>
-                            <h5 class="error" style="color:red;"> <?php echo $_GET['error'];?></h5>
-                        <?php } ?>
+                    if (isset($_GET['error'])) {
+                    ?>
+                    <h5 class="error" style="color:red;">
+                        <?php echo $_GET['error']; ?>
+                    </h5>
+                    <?php } ?>
                     <div class="row">
                         <div class="col-10 ml-5 mt-4">
                             <label>UserName</label><br>
-                            <input type="text"name="uname"  placeholder="Enter UserName" style="width:320px;">
+                            <input type="text" name="uname" placeholder="Enter UserName" style="width:320px;">
                         </div>
                         <div class="col-10 ml-5 mt-4">
                             <div class="d-flex justify-content-between">
@@ -42,7 +44,8 @@
                                 <!-- <a href="#">Forgot Password?</a> -->
                             </div>
                             <div class="d-flex justify-content-xl-around">
-                                <input type="password" name="password" placeholder="Enter Password" style="width:320px;"/>
+                                <input type="password" name="password" placeholder="Enter Password"
+                                    style="width:320px;" />
                                 <!-- <input type="button" value="Show" class="btn btn-primary d-flex justify-content-around" style="width:50px; height:30px ;"> -->
                             </div>
                         </div>
@@ -62,9 +65,11 @@
         </div>
     </div>
     <!-- <h6 style="margin-left:570px; margin-top: 20px;">Copyright@2022 - Rutvik Kamani</h6> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        
+
     </script>
 </body>
 
