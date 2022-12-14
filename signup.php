@@ -13,7 +13,7 @@
         .register {
             border: 1;
             width: 400px;
-            height: 420px;
+            height: 500px;
             background-color: white;
         }
     </style>
@@ -23,7 +23,7 @@
     <div class="container">
         <div class="d-flex justify-content-center mt-2">
             <div class="border border-black register">
-                <form action="insert.php" method="POST">
+                <form action="insert.php" method="POST" enctype="multipart/form-data">
                     <h1 class="text-center">Register</h1>
 
                     <div class="row">
@@ -38,6 +38,10 @@
                         <div class="col-10 ml-5 mt-4">
                             <label>Age</label><br>
                             <input type="number" name="age" placeholder="Enter Age" style="width:320px;">
+                        </div>
+                        <div class="col-10 ml-5 mt-4">
+                            <label>Profile Photo</label>
+                            <input type="file" name="uploadFile">
                         </div>
                         <div class="col-8 mt-5">
                             <button type="submit" class="btn btn-primary w-100"
