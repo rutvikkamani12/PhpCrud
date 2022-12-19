@@ -38,5 +38,4 @@ if (isset($_SESSION['uname'])) {
         <input type="submit" value="update" name="update">
     </form>
 </body>
-
 </html>
